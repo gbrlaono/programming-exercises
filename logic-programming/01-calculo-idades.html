@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Idades</title>
+</head>
+<body>
+
+    <h2>Este exercício calcula as idades de Flávio e Joaquim no ano de 2024 e Barney no ano de 2025.</h2>
+
+    <script>
+        // Função sem parâmetro que adiciona duas quebras de linha no documento
+        function pulaLinha() {
+            document.write("<br>");	
+            document.write("<br>");	
+        }
+
+        // Função que recebe um parâmetro 'frase'
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha(); // Chamando uma função dentro de outra
+        }
+
+        var ano = 2024;
+
+        mostra("Flávio tem " + (ano - 1977) + " anos");
+        mostra("Joaquim tem " + (ano - 1996) + " anos");
+
+        // Reatribuição do valor da variável
+        ano = 2025;
+
+        mostra("Barney terá " + (ano - 2004) + " anos");
+    </script>
+
+</body>
+</html>
+
+
+
+
+
