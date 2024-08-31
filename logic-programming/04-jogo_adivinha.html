@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Advinhe o número</title>
+</head>
+<body>
+
+	<script>
+		
+		function pulaLinha() {
+
+			document.write("<br>");	
+			document.write("<br>");	
+		}
+
+		function mostra(frase) {
+
+			document.write(frase);
+			pulaLinha();
+		}
+
+		/* A função Math.round() arredonda o valor para o inteiro mais próximo.
+		É por isso que o resultado final pode ser 10, mesmo que o cálculo original retorne um valor próximo, como 9.8 ou 9.9.
+		Se o número decimal for 0.5 ou mais, Math.round() arredonda para cima; se for menor que 0.5, arredonda para baixo.*/
+
+		var numeroPensado = Math.round(Math.random() * 10) ; 
+
+		var tentativas = 1;
+
+		while(tentativas <= 3) {
+
+			var chute = parseInt(prompt("Digite seu chute!"));
+
+			if(chute == numeroPensado) {
+
+				mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+				break;
+
+			} else {
+				
+				mostra("Você ERROU!");
+			}
+
+			tentativas++;
+		}
+
+		mostra("FIM");
+
+
+	</script>
+</body>
+</html>
+
+
+
+
