@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {  
+
+		document.write("<br>");	  
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {  
+
+		document.write(frase);
+		pulaLinha(); 
+	}
+
+	/* 
+	Pense no 'for' como se ele fosse dividido em três espaços:
+		for(espaço1; espaço2; espaço3) {}
+
+	O 'espaço1' é usado para inicializar uma variável, geralmente uma variável de controle, que será usada para determinar quantas vezes o loop deve ser executado.
+	O 'espaço2' é a condição de execução do loop. Enquanto essa condição for verdadeira, o loop continuará executando. Assim que a condição for falsa, o loop para.
+	O 'espaço3' é executado ao final de cada iteração do loop e é geralmente usado para atualizar a variável de controle, como incrementá-la ou decrementá-la.
+	*/
+	
+	for(var multiplicador = 1; multiplicador <= 10; multiplicador++) { // 'multiplicador++'' é o mesmo que 'multiplicador = multiplicador + 1'
+
+		mostra(6 * multiplicador);
+	}
+
+	mostra("FIM");  
+		
+</script>
+
+
+
+
