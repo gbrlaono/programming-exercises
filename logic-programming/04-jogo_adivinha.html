@@ -28,14 +28,14 @@
 
 		var tentativas = 1;
 
-		while(tentativas <= 3) {
+		while(tentativas <= 3) { // Inicia um loop que continuará enquanto o número de tentativas for menor ou igual a 3
 
 			var chute = parseInt(prompt("Digite seu chute!"));
 
 			if(chute == numeroPensado) {
 
 				mostra("Você ACERTOU, o número pensado era " + numeroPensado);
-				break;
+				break; // Sai do loop usando 'break' quando o usuário acertar, mesmo que ainda restem tentativas
 
 			} else {
 				
