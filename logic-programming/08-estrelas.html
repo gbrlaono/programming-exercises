@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrelas</title>
+</head>
+<body>
+
+	<script>
+		
+		function pulaLinha() {
+
+			document.write("<br>");
+		}
+
+		function mostra(frase) {
+
+			document.write(frase);
+			pulaLinha();
+		}
+
+		/* A variável 'linha' começa em 1 e é incrementada em 1 a cada iteração.
+		O loop continua enquanto 'linha' for menor ou igual a 3.*/
+		for(var linha = 1; linha <= 3; linha++) { 
+
+			/* A variável 'coluna' começa em 1 e é incrementada em 1 a cada iteração.
+        	 O loop continua enquanto 'coluna' for menor ou igual a 10.*/
+			for(var coluna = 1; coluna <= 10; coluna++) {
+
+				document.write("*");		
+			}
+
+			pulaLinha();
+		}
+		
+
+	</script>
+</body>
+</html>
+
+
+
+
